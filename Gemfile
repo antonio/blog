@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 3.1.5'
-gem 'middleman-livereload', '~> 3.1.0'
+gem 'middleman'
+gem 'middleman-blog'
+gem 'middleman-livereload'
+gem 'middleman-smusher'
 gem 'slim'
