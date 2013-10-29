@@ -1,4 +1,6 @@
-ul
+= image_tag 'antonio.png', id: 'avatar'
+
+ul#articles
 - blog.articles.each do |article|
-  li
+  li.article
     = link_to article.title, article.url
