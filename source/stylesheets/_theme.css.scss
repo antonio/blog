@@ -1,0 +1,14 @@
+.article-item {
+  list-style: none;
+  margin-bottom: 2rem;
+  @include clearfix;
+}
+
+.article-title {
+  @include span-columns(9);
+}
+
+.article-date {
+  color: $light-text-color;
+  @include span-columns(3);
+}

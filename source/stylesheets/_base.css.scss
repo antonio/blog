@@ -1,3 +1,14 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+
+  &:hover {
+    background-color: $selected-link-bg-color;
+    color: $selected-link-fg-color;
+  }
+}
