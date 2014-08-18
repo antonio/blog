@@ -1,6 +1,11 @@
 @import "foundation";
 @import "variables";
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $text-color;
+}
+
 a {
   color: $text-color;
   border-bottom: 1px dotted;
