@@ -1,1 +1,23 @@
 @import "foundation";
+@import "variables";
+
+a {
+  color: $text-color;
+  border-bottom: 1px dotted;
+  &:hover {
+    color: $selected-link-fg-color;
+    background-color: $selected-link-bg-color;
+  }
+}
+
+.article-list-item {
+  list-style-type: none;
+}
+
+.article-link {
+  display: inline-block;
+}
+
+.article-date {
+  color: $light-text-color;
+}
