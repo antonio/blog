@@ -27,9 +27,3 @@ a {
 .article-date {
   color: $light-text-color;
 }
-
-@media #{$large-up} {
-  .tab-bar {
-    display: none;
-  }
-}

@@ -1,6 +1,15 @@
-<div class="off-canvas-wrap" data-offcanvas>
+<div class="off-canvas-wrap row" data-offcanvas>
   <div class="inner-wrap">
-    <nav class="tab-bar">
+    <nav class="show-for-large-up">
+      <ul class="inline-list">
+        <li><a href="/">Article index</a></li>
+        <li><a href="https://www.github.com/antonio">GitHub</a></li>
+        <li><a href="https://www.twitter.com/wottam">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/santosvelasco">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <nav class="tab-bar hide-for-large-up">
       <section class="left-small">
         <a class="left-off-canvas-toggle menu-icon" href="#"><span/></a>
       </section>
@@ -18,7 +27,7 @@
     </aside>
 
     <section>
-      <ul class="article-list row">
+      <ul class="article-list">
         <% blog.articles.each do |article| %>
           <li class="article-list-item small-12 columns">
             <time class="small-2 columns article-date" datatetime="<%= article.date %>"><%= article.date.strftime("%Y %m %d") %></time>
