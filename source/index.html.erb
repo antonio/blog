@@ -1,8 +1,33 @@
-<ul class="article-list row">
-  <% blog.articles.each do |article| %>
-    <li class="article-list-item small-12 columns">
-      <time class="small-2 columns article-date" datatetime="<%= article.date %>"><%= article.date.strftime("%Y %m %d") %></time>
-      <a href="<%= article.url %>" class="article-link article-title small-10 columns"><%= article.title %></a>
-    </li>
-  <% end %>
-</ul>
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span/></a>
+      </section>
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Antonio's Ramblings</label></li>
+        <li><a href="/">Article index</a></li>
+        <li><label>Links</label></li>
+        <li><a href="https://www.github.com/antonio">GitHub</a></li>
+        <li><a href="https://www.twitter.com/wottam">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/santosvelasco">LinkedIn</a></li>
+      </ul>
+    </aside>
+
+    <section>
+      <ul class="article-list row">
+        <% blog.articles.each do |article| %>
+          <li class="article-list-item small-12 columns">
+            <time class="small-2 columns article-date" datatetime="<%= article.date %>"><%= article.date.strftime("%Y %m %d") %></time>
+            <a href="<%= article.url %>" class="article-link article-title small-10 columns"><%= article.title %></a>
+          </li>
+        <% end %>
+      </ul>
+    </section>
+
+    <a class="exit-off-canvas" href="#"></a>
+  </div>
+</div>
