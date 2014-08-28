@@ -15,15 +15,24 @@ a {
   }
 }
 
+.article-list {
+  margin: 0;
+}
+
 .article-list-item {
   list-style-type: none;
   border-bottom: 1px solid #dedede;
+  padding: 0;
 }
 
 .article-link {
   border-bottom: none;
+  padding: 0;
 }
 
 .article-date {
   color: $light-text-color;
+  padding-left: 0;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
 }

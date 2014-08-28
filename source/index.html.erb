@@ -30,8 +30,8 @@
       <ul class="article-list">
         <% blog.articles.each do |article| %>
           <li class="article-list-item small-12 columns">
-            <time class="small-2 columns article-date" datatetime="<%= article.date %>"><%= article.date.strftime("%Y %m %d") %></time>
-            <a href="<%= article.url %>" class="article-link article-title small-10 columns"><%= article.title %></a>
+            <time class="small-3 large-2 columns article-date" datatetime="<%= article.date %>"><%= article.date.strftime("%Y %m %d") %></time>
+            <a href="<%= article.url %>" class="article-link article-title small-9 large-10 columns"><%= article.title %></a>
           </li>
         <% end %>
       </ul>
