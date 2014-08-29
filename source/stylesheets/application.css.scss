@@ -6,15 +6,6 @@ body {
   color: $text-color;
 }
 
-a {
-  color: $text-color;
-  border-bottom: 1px dotted;
-  &:hover {
-    color: $selected-link-fg-color;
-    background-color: $selected-link-bg-color;
-  }
-}
-
 .article-list {
   margin: 0;
 }
@@ -22,7 +13,20 @@ a {
 .article-list-item {
   list-style-type: none;
   border-bottom: 1px solid #dedede;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
+
+  a {
+    color: $text-color;
+  }
+
+  &:hover {
+    a {
+      color: $selected-link-fg-color;
+      background-color: none;
+    }
+    background-color: $selected-link-bg-color;
+    transition: all 0.15s ease;
+  }
 }
 
 .article-link {
@@ -39,4 +43,11 @@ a {
 
 .large-nav-links {
   margin-bottom: 2rem;
+  a {
+    padding: 0 15px;
+    &:hover {
+      color: $secondary-color;
+      transition: all 0.3s ease;
+    }
+  }
 }
