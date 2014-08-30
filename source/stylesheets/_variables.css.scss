@@ -1,45 +1,14 @@
-$primary-color: #008CBA !default;   // bondi-blue
-$secondary-color: #e7e7e7 !default; // white-lilac
-$alert-color: #f04124 !default;     // cinnabar
-$success-color: #43AC6A !default;   // sea-green
-$warning-color: #f08a24 !default;   // carrot
-$info-color: #a0d3e8 !default;      // cornflower
+$primary-color: #444444 !default;
+$secondary-color: #e7e7e7 !default;
+$text-color: #555555;
 
-$white         : #FFFFFF !default;
-$ghost         : #FAFAFA !default;
-$snow          : #F9F9F9 !default;
-$vapor         : #F6F6F6 !default;
-$white-smoke   : #F5F5F5 !default;
-$silver        : #EFEFEF !default;
-$smoke         : #EEEEEE !default;
-$gainsboro     : #DDDDDD !default;
-$iron          : #CCCCCC !default;
-$base          : #AAAAAA !default;
-$aluminum      : #999999 !default;
-$jumbo         : #888888 !default;
-$monsoon       : #777777 !default;
-$steel         : #666666 !default;
-$charcoal      : #555555 !default;
-$tuatara       : #444444 !default;
-$oil           : #333333 !default;
-$jet           : #222222 !default;
-$black         : #000000 !default;
-
-// We use these to define default font weights
-$font-weight-normal: normal !default;
-$font-weight-bold: bold !default;
-
-// We use these to control various global styles
 $body-bg: #fff !default;
-$body-font-color: #222 !default;
-$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
-$body-font-weight: $font-weight-normal !default;
-$body-font-style: normal !default;$text-color: #555;
+$body-font-color: $primary-color !default;
+$body-font-family: "Open Sans", sans-serif !default;
 
-$selected-link-fg-color: #e7e7e7;
-$selected-link-bg-color: #444;
-$light-text-color: #999;
+$selected-link-fg-color: $secondary-color;
+$selected-link-bg-color: $primary-color;
+$light-text-color: #999999;
 
-// Foundation
 $base-font-size: 18px;
 $rem-base: $base-font-size;
