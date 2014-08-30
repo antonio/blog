@@ -1,11 +1,6 @@
 @import "variables";
 @import "foundation/scss/foundation";
 
-// body {
-//   font-family: 'Open Sans', sans-serif;
-//   color: $text-color;
-// }
-
 .article-list {
   margin: 0;
 }
@@ -21,10 +16,10 @@
 
   &:hover {
     a {
-      color: $selected-link-fg-color;
+      color: $secondary-color;
       background-color: none;
     }
-    background-color: $selected-link-bg-color;
+    background-color: $primary-color;
     transition: all 0.15s ease;
   }
 }

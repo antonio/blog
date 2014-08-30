@@ -1,14 +1,11 @@
-$primary-color: #444444 !default;
+$primary-color: #555555 !default;
 $secondary-color: #e7e7e7 !default;
-$text-color: #555555;
+$text-color: $primary-color;
+$light-text-color: #999999;
 
 $body-bg: #fff !default;
 $body-font-color: $primary-color !default;
 $body-font-family: "Open Sans", sans-serif !default;
-
-$selected-link-fg-color: $secondary-color;
-$selected-link-bg-color: $primary-color;
-$light-text-color: #999999;
 
 $base-font-size: 18px;
 $rem-base: $base-font-size;
