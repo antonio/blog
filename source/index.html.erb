@@ -1,42 +1,10 @@
-<div class="off-canvas-wrap row" data-offcanvas>
-  <div class="inner-wrap">
-    <nav class="show-for-large-up clearfix large-nav-links">
-      <ul class="inline-list right">
-        <li><a href="/">Index</a></li>
-        <li><a href="https://www.github.com/antonio">GitHub</a></li>
-        <li><a href="https://www.twitter.com/wottam">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/santosvelasco">LinkedIn</a></li>
-      </ul>
-    </nav>
-
-    <aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Antonio's Ramblings</label></li>
-        <li><a href="/">Index</a></li>
-        <li><label>Links</label></li>
-        <li><a href="https://www.github.com/antonio">GitHub</a></li>
-        <li><a href="https://www.twitter.com/wottam">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/santosvelasco">LinkedIn</a></li>
-      </ul>
-    </aside>
-
-    <nav class="tab-bar hide-for-large-up">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" href="#"><span/></a>
-      </section>
-    </nav>
-
-    <section>
-      <ul class="article-list">
-        <% blog.articles.each do |article| %>
-          <li class="article-list-item small-12 columns">
-            <time class="small-3 large-2 columns article-date" datatetime="<%= article.date %>"><%= article.date.strftime("%Y %m %d") %></time>
-            <a href="<%= article.url %>" class="article-link article-title small-9 large-10 columns"><%= article.title %></a>
-          </li>
-        <% end %>
-      </ul>
-    </section>
-
-    <a class="exit-off-canvas" href="#"></a>
-  </div>
-</div>
+<section>
+  <ul class="article-list">
+    <% blog.articles.each do |article| %>
+      <li class="article-list-item small-12 columns">
+        <time class="small-3 large-2 columns article-date" datatetime="<%= article.date %>"><%= article.date.strftime("%Y %m %d") %></time>
+        <a href="<%= article.url %>" class="article-link article-title small-9 large-10 columns"><%= article.title %></a>
+      </li>
+    <% end %>
+  </ul>
+</section>

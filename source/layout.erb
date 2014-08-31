@@ -8,7 +8,39 @@
     <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans|Raleway:600' %>
   </head>
   <body>
-    <%= yield %>
+    <div class="off-canvas-wrap row" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="show-for-large-up clearfix large-nav-links">
+          <ul class="inline-list right">
+            <li><a href="/">Index</a></li>
+            <li><a href="https://www.github.com/antonio">GitHub</a></li>
+            <li><a href="https://www.twitter.com/wottam">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/santosvelasco">LinkedIn</a></li>
+          </ul>
+        </nav>
+
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>Antonio's Ramblings</label></li>
+            <li><a href="/">Index</a></li>
+            <li><label>Links</label></li>
+            <li><a href="https://www.github.com/antonio">GitHub</a></li>
+            <li><a href="https://www.twitter.com/wottam">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/santosvelasco">LinkedIn</a></li>
+          </ul>
+        </aside>
+
+        <nav class="tab-bar hide-for-large-up">
+          <section class="left-small">
+            <a class="left-off-canvas-toggle menu-icon" href="#"><span/></a>
+          </section>
+        </nav>
+
+        <%= yield %>
+
+        <a class="exit-off-canvas" href="#"></a>
+      </div>
+    </div>
     <%= javascript_include_tag 'application' %>
   </body>
 </html>
