@@ -48,12 +48,22 @@
 }
 
 .post-header {
-  border-left: 0.3rem solid $secondary-color;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 
   h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  time {
+    font-size: 18px;
+  }
+}
+
+@media #{$large-up} {
+  .post-header {
+    border-left: 0.3rem solid $secondary-color;
+    padding-left: 1rem;
   }
 }
