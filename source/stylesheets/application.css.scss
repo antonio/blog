@@ -46,3 +46,14 @@
     }
   }
 }
+
+.post-header {
+  border-left: 0.3rem solid $secondary-color;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+  }
+}
