@@ -8,7 +8,7 @@
     <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans|Raleway:600' %>
   </head>
   <body>
-    <div class="off-canvas-wrap row" data-offcanvas>
+    <div class="off-canvas-wrap" data-offcanvas>
       <div class="inner-wrap">
         <nav class="show-for-large-up clearfix large-nav-links">
           <ul class="inline-list right">
@@ -36,7 +36,9 @@
           </section>
         </nav>
 
-        <%= yield %>
+        <div class="row">
+          <%= yield %>
+        </div>
 
         <a class="exit-off-canvas" href="#"></a>
       </div>
