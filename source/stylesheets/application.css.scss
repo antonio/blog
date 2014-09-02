@@ -37,7 +37,8 @@
 }
 
 .large-nav-links {
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   a {
     padding: 0 15px;
     &:hover {
@@ -70,4 +71,9 @@
 
 .tab-bar {
   margin-bottom: 1rem;
+}
+
+.image-header {
+  border: 1px solid $primary-color;
+  margin-bottom: 2rem;
 }
