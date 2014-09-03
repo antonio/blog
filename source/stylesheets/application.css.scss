@@ -59,7 +59,9 @@
 }
 
 .post-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $secondary-color;
+  padding-bottom: 0.5rem;
 
   h1 {
     font-family: 'Raleway', sans-serif;
@@ -69,13 +71,6 @@
 
   time {
     font-size: 18px;
-  }
-}
-
-@media #{$large-up} {
-  .post-header {
-    border-left: 0.3rem solid $secondary-color;
-    padding-left: 1rem;
   }
 }
 
