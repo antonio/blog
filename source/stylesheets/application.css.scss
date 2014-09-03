@@ -82,3 +82,11 @@
   border: 1px solid $primary-color;
   margin-bottom: 2rem;
 }
+
+code {
+  border: 1px solid $primary-color;
+  background-color: $secondary-color;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
