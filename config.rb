@@ -1,14 +1,15 @@
-require "middleman-smusher"
+require 'middleman-smusher'
+require 'middleman-syntax'
 
 activate :automatic_image_sizes
 activate :livereload
 
 activate :blog do |blog|
-  blog.sources = "articles/:year-:month-:day-:title.html"
-  blog.default_extension = ".md"
+  blog.sources = 'articles/:year-:month-:day-:title.html'
+  blog.default_extension = '.md'
 end
 
-page "/feed.xml", :layout => false
+page '/feed.xml', layout: false
 
 set :css_dir,    'stylesheets'
 set :js_dir,     'javascripts'
@@ -22,4 +23,4 @@ end
 
 activate :syntax
 
-sprockets.append_path File.join(root, "bower_components")
+sprockets.append_path File.join(root, 'bower_components')
