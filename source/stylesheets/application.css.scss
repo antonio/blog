@@ -83,13 +83,18 @@
   margin-bottom: 2rem;
 }
 
+@import "syntax";
+
 code {
   border: 1px solid $primary-color;
   background-color: $secondary-color;
-  display: block;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.2rem;
   font-weight: 100;
 }
 
-@import "syntax";
+code.highlight {
+  margin-bottom: 1rem;
+  display: block;
+  padding: 0.5rem;
+}
