@@ -2,7 +2,6 @@ require 'middleman-smusher'
 require 'middleman-syntax'
 
 activate :automatic_image_sizes
-activate :livereload
 
 activate :blog do |blog|
   blog.sources = 'articles/:year-:month-:day-:title.html'
