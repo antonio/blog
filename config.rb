@@ -20,4 +20,6 @@ configure :build do
   activate :smusher
 end
 
+activate :syntax
+
 sprockets.append_path File.join(root, "bower_components")
