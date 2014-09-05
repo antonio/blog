@@ -20,6 +20,8 @@ configure :build do
   activate :smusher
 end
 
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
 activate :syntax
 
 sprockets.append_path File.join(root, 'bower_components')
