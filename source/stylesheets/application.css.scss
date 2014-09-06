@@ -1,6 +1,11 @@
 @import "variables";
 @import "foundation/scss/foundation";
 
+a {
+  color: $link-color;
+  border-bottom: 1px dotted $link-color;
+}
+
 .article-list {
   margin: 0;
 }
@@ -13,6 +18,7 @@
 
   a {
     color: $text-color;
+    border-bottom: none;
   }
 
   &:hover {
@@ -51,6 +57,7 @@
   margin-bottom: 0.5rem;
   a {
     padding: 0 15px;
+    border-bottom: none;
     &:hover {
       color: $secondary-color;
       transition: all 0.3s ease;
