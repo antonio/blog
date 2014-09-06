@@ -13,6 +13,25 @@ article {
   }
 }
 
+@import "syntax";
+
+code {
+  border: 1px solid $primary-color;
+  background-color: $code-bg-color;
+  width: 100%;
+  padding: 0 0.2rem;
+  font-weight: 100;
+  margin: 0 0.1rem;
+}
+
+code.highlight {
+  margin-bottom: 1rem;
+  display: block;
+  padding: 0.5rem;
+  line-height: $base-line-height;
+  overflow-x: scroll;
+}
+
 .article-list {
   margin: 0;
 }
@@ -95,22 +114,4 @@ article {
 .image-header {
   border: 1px solid $primary-color;
   margin-bottom: 2rem;
-}
-
-@import "syntax";
-
-code {
-  border: 1px solid $primary-color;
-  background-color: $code-bg-color;
-  width: 100%;
-  padding: 0 0.2rem;
-  font-weight: 100;
-  margin: 0 0.1rem;
-}
-
-code.highlight {
-  margin-bottom: 1rem;
-  display: block;
-  padding: 0.5rem;
-  line-height: $base-line-height;
 }
