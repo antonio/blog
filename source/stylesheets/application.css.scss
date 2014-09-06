@@ -6,6 +6,13 @@ a {
   border-bottom: 1px dotted $link-color;
 }
 
+article {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .article-list {
   margin: 0;
 }
