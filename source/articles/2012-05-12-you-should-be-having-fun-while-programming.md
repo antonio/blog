@@ -39,8 +39,8 @@ In my opinion, being a programmer and not enjoying your work is a fast way to
 feeling sad and miserable. If you really don't like doing it, I think you should
 considering a career change (easier to say than to do, I know).
 
-Several days ago my girlfriend asked me "Hey, don't you get bored of that programming stuff?"
+Several days ago my girlfriend asked me <blockquote>Hey, don't you get bored of that programming stuff?</blockquote>
 
-And my answer was "No, not at all".
+And my answer was <blockquote>No, not at all</blockquote>
 
 If you are programming and not having fun, you are doing it wrong.

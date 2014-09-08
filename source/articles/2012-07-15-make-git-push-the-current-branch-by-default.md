@@ -9,10 +9,10 @@ references:
   - http://stackoverflow.com/questions/948354/git-push-current-branch
 ---
 Tired of typing the name of your git branch everytime you push it? Wouldn't it
-be nice to just type ``git push`` instead of the full ``git push origin
-annoying-and-suprisingly-long-branch-name``?
+be nice to just type `git push` instead of the full `git push origin
+annoying-and-suprisingly-long-branch-name`?
 
-``git config`` to the rescue. The ``push.default`` option lets you define the
+`git config` to the rescue. The `push.default` option lets you define the
 prefered behavior when pushing. From the manual page, options are:
 
 * nothing - do not push anything.
@@ -26,11 +26,11 @@ git version as of today (1.7.11), your mileage may vary.</p></div>
 
 So, basically all you need to do is type
 
-```
+```shell
 git config push.default current
 ```
 
 If the branch names differ between your local and remote environments, consider
-using ``upstream`` as the configuration option.
+using `upstream` as the configuration option.
 
 Happy pushing!

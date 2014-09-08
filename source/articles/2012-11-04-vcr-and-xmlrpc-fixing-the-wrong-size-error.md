@@ -21,7 +21,9 @@ pull request and... [broke the build as it was merged into master](https://travi
 The specs failed in all Ruby 1.8.x interpreters (this includes REE, JRuby and
 Rubinius) with messages like the following:
 
-```Wrong size. Was 9764, should be 9662```
+```
+Wrong size. Was 9764, should be 9662
+```
 
 I haven't been able to trace the exact cause of problem, but at least I have been able to
 fix it. The solution is to record the HTTP requests using one of the Ruby 1.8.x

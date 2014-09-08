@@ -21,10 +21,10 @@ writing to see if it passes or not.
 
 Turns out that Rspec has a lot of options I didn't know about, including one to
 specify the line of the file that you want to test. For example, to run the test
-in line 25 of the file ``spec/example_spec.rb``, just call Rspec in the
+in line 25 of the file `spec/example_spec.rb`, just call Rspec in the
 following way
 
-```
+```shell
 rspec spec/example_spec.rb:25
 ```
 
@@ -41,9 +41,9 @@ language.
 
 This has been the first time I have a look at the language, so maybe
 there is a better/more efficient way to do it, but this works for me. Add the
-following snippet to your ``.vimrc`` file.
+following snippet to your `.vimrc` file.
 
-``` vim
+```vim
 function! RSpecFile()
   execute("!clear && rspec " . expand("%p"))
 endfunction
@@ -58,9 +58,9 @@ command! RSpecCurrent call RSpecCurrent()
 
 ```
 
-With this in your config file, use ``<leader>r`` to run the test under your
-cursor and ``<leader>R`` to run *all* the tests in the current file.
+With this in your config file, use `<leader>r` to run the test under your
+cursor and `<leader>R` to run *all* the tests in the current file.
 
 The code is pretty straightforward: basically we execute a shell command
 using some vimscript functions to get the variables we want with
-``expand("%p")`` (the file) and ``line(".")`` (the line number).
+`expand("%p")` (the file) and `line(".")` (the line number).

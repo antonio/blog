@@ -15,12 +15,16 @@ changing the log message of any commit, as long as it has not been already
 pushed upstream. Try to do that with Subversion :P  Suppose that you have
 commited with a misspelling in the message:
 
-` git commit -a -m "fis typo ib documentatation" `
+```shell
+git commit -a -m "fis typo ib documentatation"
+```
 
 Well, Git allows you to change the message even if you have already commited in
 one simple line:
 
-` git commit --amend `
+```shell
+git commit --amend
+```
 
 That will start your editor of choice (defined with the `EDITOR` variable in the
 shell) so that you are able to change not only the log message, but to:
@@ -39,8 +43,10 @@ to change the message of the last commit (see above) but I had never needed to
 change another one. If you ever find yourself in such a situation, you can work
 it out with the following command:
 
-`git rebase --interactive COMMITID_PRIOR_TO_THE_ONE_TO_CHANGE`
+```shell
+git rebase --interactive COMMITID_PRIOR_TO_THE_ONE_TO_CHANGE
+```
 
 See below a screenshot of my editor in the process of rebasing commits:
 
-{%img /images/2011/02/2011-02-16-170025_767x664_scrot.png %}
+![Rebasing commits](/images/2011/02/2011-02-16-170025_767x664_scrot.png)

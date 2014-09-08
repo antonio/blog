@@ -20,7 +20,7 @@ like to have is a new command called `validate` that will push the master branch
 and delete a remote one, passed as a parameter. It will be executed after
 rebasing the target branch against `master`, so the idea is to go from
 
-```
+```shell
 git checkout master
 git merge target_branch
 git push origin master
@@ -29,7 +29,7 @@ git push origin :target_branch
 
 to
 
-```
+```shell
 git checkout master
 git validate target_branch
 ```
@@ -44,7 +44,7 @@ The rule is simple, if you want to create a `validate` command, the script will
 be called `git-validate` and must be placed in one of the folders present in your
 `PATH`.
 
-<p class='hint'>
+<p class="alert-box warning">
 Make sure that you give execution permissions to the script!
 </p>
 
@@ -53,4 +53,3 @@ Make sure that you give execution permissions to the script!
 You are not limited to shell scripting when it comes to defining your own git
 commands. Actually, you can use a more powerful language (such as Ruby) if you
 want, therefore being only limited only by your imagination and coding skills.
-
