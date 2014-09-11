@@ -30,7 +30,8 @@ code.highlight {
   display: block;
   padding: 0.5rem;
   line-height: $base-line-height;
-  overflow-x: scroll;
+  overflow-x: auto;
+  border-left: 10px solid $primary-color;
 }
 
 .article-list {
