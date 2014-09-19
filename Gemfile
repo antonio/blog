@@ -6,3 +6,4 @@ gem 'middleman-smusher'
 gem 'middleman-syntax'
 
 gem 'redcarpet'
+gem 'builder'

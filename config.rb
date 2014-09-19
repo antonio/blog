@@ -1,5 +1,6 @@
 require 'middleman-smusher'
 require 'middleman-syntax'
+require 'builder'
 
 activate :automatic_image_sizes
 
