@@ -7,10 +7,17 @@ a {
 }
 
 article {
+  margin: 0 0.5rem;
   img {
     display: block;
     margin: 0 auto;
     border: 1px solid $primary-color;
+  }
+}
+
+@media #{$large-up} {
+  article {
+    margin: 0;
   }
 }
 
@@ -92,7 +99,7 @@ code.highlight {
 }
 
 .post-header {
-  margin-bottom: 1rem;
+  margin: 0 0.5rem 1rem 0.5rem;
   border-bottom: 1px solid $secondary-color;
   padding-bottom: 0.5rem;
 
@@ -107,12 +114,34 @@ code.highlight {
   }
 }
 
-.tab-bar {
-  margin-bottom: 1rem;
+@media #{$large-up} {
+  .post-header {
+    margin: 0 0 1rem 0;
+  }
+  .tab-bar {
+    margin-bottom: 1rem;
+
+  }
 }
 
 .image-header {
   border: 1px solid $primary-color;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 100%;
+}
+
+@media #{$large-up} {
+  .image-header {
+    margin-bottom: 2rem;
+  }
+}
+
+#disqus_thread {
+  margin: 0 0.5rem;
+
+  @media #{$large-up} {
+    #disqus_thread {
+      margin: 0;
+    }
+  }
 }
