@@ -1,4 +1,3 @@
-require 'middleman-smusher'
 require 'middleman-syntax'
 require 'builder'
 
@@ -18,7 +17,6 @@ set :images_dir, 'images'
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :smusher
 end
 
 set :markdown_engine, :redcarpet
