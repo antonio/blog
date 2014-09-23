@@ -1,5 +1,9 @@
 @import "variables";
-@import "foundation/scss/foundation";
+@import "foundation/scss/foundation/components/grid";
+@import "foundation/scss/foundation/components/type";
+@import "foundation/scss/foundation/components/inline-lists";
+@import "foundation/scss/foundation/components/offcanvas";
+@import "foundation/scss/foundation/components/visibility";
 
 a {
   color: $link-color;
