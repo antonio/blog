@@ -59,15 +59,6 @@ code.highlight {
     color: $text-color;
     border-bottom: none;
   }
-
-  &:hover {
-    a {
-      color: $secondary-color;
-      background-color: none;
-    }
-    background-color: $primary-color;
-    transition: all 0.15s ease;
-  }
 }
 
 .article-link {
