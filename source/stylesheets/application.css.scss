@@ -7,7 +7,9 @@
 
 a {
   color: $link-color;
-  border-bottom: 1px dotted $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
 }
 
 article {
@@ -87,7 +89,7 @@ code.highlight {
     border-bottom: none;
     color: $primary-color;
     &:hover {
-      color: lighten($primary-color, 15%);
+      color: $link-hover-color;
       transition: all 0.3s ease;
     }
   }
