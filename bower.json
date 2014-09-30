@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "font-awesome": "~4.2.0",
-    "foundation": "5.4.2"
+    "foundation": "5.4.5"
   }
 }

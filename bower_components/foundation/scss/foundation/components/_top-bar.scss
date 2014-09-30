@@ -5,6 +5,7 @@
 @import "global";
 @import "grid";
 @import "buttons";
+@import "forms";
 
 //
 // Top Bar Variables
@@ -48,8 +49,8 @@ $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%) !def
 $topbar-link-font-family: $body-font-family !default;
 $topbar-link-text-transform: none !default;
 $topbar-link-padding: $topbar-height / 3 !default;
-$topbar-back-link-size: $h5-font-size !default;
-$topbar-link-dropdown-padding: 20px;
+$topbar-back-link-size: rem-calc(18) !default;
+$topbar-link-dropdown-padding: 20px !default;
 $topbar-button-font-size: 0.75rem !default;
 $topbar-button-top: 7px !default;
 
@@ -232,7 +233,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
             }
             height: 34px;
             line-height: 33px;
-            padding: 0 $topbar-link-padding+25px 0 $topbar-link-padding;
+            padding: 0 $topbar-link-padding+25 0 $topbar-link-padding;
             color: $topbar-menu-link-color;
             position: relative;
 
@@ -411,6 +412,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
             // Back Button
             margin-bottom: 0;
             margin-top: 0;
+            font-size: $topbar-back-link-size;
             a {
               color: $topbar-link-color;
               // line-height: $topbar-height / 2;
