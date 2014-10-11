@@ -48,7 +48,17 @@ be called `git-validate` and must be placed in one of the folders present in you
 Make sure that you give execution permissions to the script!
 </p>
 
-{% gist 2932484 %}
+```shell
+#!/bin/sh
+
+branch=$1
+test -z $branch && echo "branch required." 1>&2 && exit 1
+
+git checkout master
+git merge $branch
+git push origin master
+git push origin :$branch
+```
 
 You are not limited to shell scripting when it comes to defining your own git
 commands. Actually, you can use a more powerful language (such as Ruby) if you
