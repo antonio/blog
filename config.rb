@@ -8,6 +8,8 @@ activate :blog do |blog|
   blog.default_extension = '.md'
 end
 
+activate :directory_indexes
+
 page '/feed.xml', layout: false
 
 set :css_dir,    'stylesheets'
