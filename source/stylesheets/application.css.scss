@@ -63,6 +63,12 @@ code.highlight {
   }
 }
 
+@media #{$large-up} {
+  .article-list-item {
+    font-size: 1.1rem;
+  }
+}
+
 .article-link {
   border-bottom: none;
   padding: 0;
@@ -76,7 +82,7 @@ code.highlight {
 
 @media #{$large-up} {
   .article-date {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -141,11 +147,18 @@ code.highlight {
   }
 }
 
-.about-me {
-  font-size: 0.85rem;
-}
-
 .desktop-nav {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+.off-canvas-list .off-canvas-p {
+  padding: 0.66667rem;
+  color: lighten($primary-color, 15%);
+}
+
+.off-canvas-list .off-canvas-menu-inline-link {
+  display: inline;
+  padding: 0;
+  border-bottom: none;
 }
