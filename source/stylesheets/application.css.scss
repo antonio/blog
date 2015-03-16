@@ -30,21 +30,22 @@ article {
 @import "syntax";
 
 code {
-  border: 1px solid $primary-color;
-  background-color: $code-bg-color;
-  width: 100%;
   padding: 0 0.2rem;
-  font-weight: 100;
-  margin: 0 0.1rem;
+  margin: 0;
+  border: 1px solid #dfdfdf;
 }
 
-code.highlight {
+.highlight {
   margin-bottom: 1rem;
   display: block;
   padding: 0.5rem;
   line-height: $base-line-height;
   overflow-x: auto;
-  border-left: 10px solid $primary-color;
+  border: 1px solid #dfdfdf;
+
+  code {
+    border: none;
+  }
 }
 
 .article-list {
